@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>QQtry1</title>
+<!--    <link rel="stylesheet/less" href="css/try1.less">
+    <script src="js/less-2.5.3.min.js"></script>-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/tyr1.min.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        ~(function () {
+            let computedRem=function () {
+                let winW=document.documentElement.clientWidth;
+                if(winW>640){
+                    document.documentElement.style.fontSize='100px';
+                    return
+                }
+                document.documentElement.style.fontSize=winW/640*100+'px';
+            };
+            computedRem();
+            window.addEventListener('resize',computedRem)
+        })();
+    </script>
+</head>
+<body>
+<main class="clearfix">
+    <audio src="img/myDream.m4a" preload="none" id="musicAudio"></audio>
+    <header>
+        <img src="img/myDream.jpg" alt="">
+        <h4>
+            <b>我的梦</b>
+            <span>张靓颖</span>
+        </h4>
+        <a href="javascript:;" class="icon-play"></a>
+    </header>
+    <section>
+ <div class="wrapper">
+<!--     <p class="select">我是歌词twetgwtwetew</p>
+     <p>我是歌词</p>-->
+ </div>
+    </section>
+    <footer>
+        <div class="foot-top">
+            <div class="currentTime">00:00</div>
+            <div class="mid">
+                <div class="mid-inner"></div>
+            </div>
+            <div class="duration">00:00</div>
+        </div>
+        <div class="foot-bot">
+            下载这首音乐
+        </div>
+    </footer>
+</main>
+<script src="js/zepto.min.js"></script>
+<script src="js/try1.js"></script>
+</body>
+</html>
